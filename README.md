@@ -1,0 +1,68 @@
+# Portfólio — Vítor Barra
+
+Portfólio de análise de dados com cases reais, construído com React e Tailwind.
+
+**Acesse:** [link do site na Vercel]
+
+| Modo claro | Modo escuro |
+| --- | --- |
+| ![Home no modo claro](docs/img/home-claro.png) | ![Home no modo escuro](docs/img/home-escuro.png) |
+
+## Sobre o projeto
+
+Site para apresentar meus cases de análise de dados a recrutadores e gestores.
+Cada case é contado como uma história: o problema, o que os dados mostraram, o resultado e as limitações.
+
+## Stack
+
+- **Vite** — ambiente de desenvolvimento e build rápidos
+- **React** + **React Router** — componentes e uma página por case
+- **Tailwind CSS** — estilo com tokens de cor próprios para os dois temas
+- **React Icons (Tabler)** — todos os ícones do site
+- **Vercel** — deploy automático a cada push na `main`
+
+## Funcionalidades
+
+- Modo claro e escuro, seguindo a preferência do sistema, com troca manual salva no navegador
+- Layout responsivo, testado em celular
+- Conteúdo dos cases separado do código, em `src/data/cases.js`
+- Gráficos com destaque só no achado principal
+- Botões com área de toque de 44px e rótulos para leitores de tela
+
+## Processo e decisões de design
+
+- **Conteúdo antes do código:** posicionamento, "Sobre mim" e roteiro de cada case foram definidos antes de qualquer tela.
+- **Paleta:** extensão da paleta do meu blog [log-narrado], com um ocre como única cor quente, reservado para o achado de cada gráfico.
+- **Tipografia:** família IBM Plex (Serif nos títulos, Sans no texto, Mono no código).
+- **Layout:** [quantas] opções de home foram prototipadas; a escolhida é editorial, com foto no topo e cases em duas colunas.
+- [Outra decisão ou aprendizado que valha contar]
+
+## Estrutura
+
+```
+src/
+├── components/   # Header, Hero, CaseCard, MetricCard, BarChart...
+├── data/         # conteúdo dos cases
+└── pages/        # Home, CasePage, NotFound
+```
+
+## Como rodar localmente
+
+```bash
+npm install
+npm run dev
+```
+
+## Como adicionar um case
+
+Acrescente um objeto à lista em `src/data/cases.js`. A home e a página do case são geradas automaticamente a partir dele.
+
+## Próximos passos
+
+- [ ] Case de desempenho escolar
+- [ ] Case de vôlei
+- [ ] Case de jogos
+
+## Contato
+
+[LinkedIn](https://linkedin.com/in/vitorbarra) · vifebarra@outlook.com

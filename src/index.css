@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "@fontsource/ibm-plex-serif/500.css";
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+
+@theme {
+  --font-serif: "IBM Plex Serif", serif;
+  --font-sans: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --color-bg: #f8f7fa;
+  --color-card: #ffffff;
+  --color-surface: #e5e3ec;
+  --color-border: #d4d1de;
+  --color-ink: #26252b;
+  --color-ink-muted: #63616b;
+  --color-primary: #58628a;
+  --color-on-primary: #ffffff;
+  --color-primary-soft: #414a6c;
+  --color-highlight: #b07d4f;
+  --color-sage: #6f8a6b;
+  --color-rose: #a35f6e;
+  --color-lavender: #8a7aa8;
+  --color-chart-neutral: #d4d1de;
+  --color-chart-axis: #a3a0ad;
+}
+
+.dark {
+  --color-bg: #1a1920;
+  --color-card: #24232b;
+  --color-surface: #2f2e38;
+  --color-border: #36343f;
+  --color-ink: #ecebf1;
+  --color-ink-muted: #a3a0ad;
+  --color-primary: #8f99c4;
+  --color-on-primary: #1a1920;
+  --color-primary-soft: #b3bbdd;
+  --color-highlight: #d0a070;
+  --color-sage: #93ad8e;
+  --color-chart-neutral: #3a3946;
+  --color-chart-axis: #5c5a66;
+}
+
+@layer base {
+  html { @apply bg-bg text-ink font-sans antialiased; }
+  body { @apply text-[17px]/[1.7]; }
+  h1, h2 { @apply font-serif font-medium; }
+  a { @apply text-primary hover:text-primary-soft; }
+}
