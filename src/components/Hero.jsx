@@ -32,7 +32,7 @@ export default function Hero() {
       </div>
       <div className="flex w-full justify-center md:flex-[2_1_0%]">
         <img
-          src="/foto1.jpg"
+          src="/foto.jpg"
           alt="Foto de Vítor Barra"
           width="800"
           height="1000"
