@@ -6,16 +6,19 @@ import Home from './pages/Home.jsx'
 import CasePage from './pages/CasePage.jsx'
 import NotFound from './pages/NotFound.jsx'
 
-// Ao trocar de página, volta ao topo — ou rola até a âncora (#cases, #sobre...)
+// Ao trocar de página, volta ao topo — ou rola suavemente até a âncora (#cases, #sobre...)
 function RolagemPorRota() {
-  const { pathname, hash } = useLocation()
+  const { pathname, hash, key } = useLocation()
   useEffect(() => {
     if (hash) {
-      document.getElementById(hash.slice(1))?.scrollIntoView()
+      const reduzirMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      document
+        .getElementById(hash.slice(1))
+        ?.scrollIntoView({ behavior: reduzirMovimento ? 'auto' : 'smooth' })
     } else {
-      window.scrollTo(0, 0)
+      window.scrollTo({ top: 0, behavior: 'instant' })
     }
-  }, [pathname, hash])
+  }, [pathname, hash, key])
   return null
 }
 

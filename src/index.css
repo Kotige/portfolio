@@ -43,6 +43,9 @@
 }
 
 @layer base {
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
   html { @apply bg-bg text-ink font-sans antialiased; }
   body { @apply text-[17px]/[1.7]; }
   h1, h2 { @apply font-serif font-medium; }
