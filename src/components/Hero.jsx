@@ -36,7 +36,7 @@ export default function Hero() {
           alt="Foto de Vítor Barra"
           width="800"
           height="1000"
-          className="aspect-[4/5] w-full max-w-sm rounded-2xl border border-border bg-surface object-cover"
+          className="aspect-4/5 w-full max-w-sm rounded-2xl border border-border bg-surface object-cover"
         />
       </div>
     </section>
