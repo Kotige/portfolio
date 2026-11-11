@@ -1,16 +1,16 @@
 # Portfólio — Vítor Barra
 
-Portfólio de análise de dados com cases reais, construído com React e Tailwind.
+Meu portifólio de Ciência de Dados com cases reais, construído utilizando meus conhecimentos prévios de React, Tailwind e Claude Code.
 
 **Acesse:** [link do site na Vercel]
 
-| Modo claro | Modo escuro |
-| --- | --- |
+| Modo claro                                     | Modo escuro                                      |
+| ---------------------------------------------- | ------------------------------------------------ |
 | ![Home no modo claro](docs/img/home-claro.png) | ![Home no modo escuro](docs/img/home-escuro.png) |
 
 ## Sobre o projeto
 
-Site para apresentar meus cases de análise de dados a recrutadores e gestores.
+Site para apresentar meus cases de análise e ciência de dados a recrutadores e gestores.
 Cada case é contado como uma história: o problema, o que os dados mostraram, o resultado e as limitações.
 
 ## Stack
@@ -24,7 +24,7 @@ Cada case é contado como uma história: o problema, o que os dados mostraram, o
 ## Funcionalidades
 
 - Modo claro e escuro, seguindo a preferência do sistema, com troca manual salva no navegador
-- Layout responsivo, testado em celular
+- Layout responsivo, mobile first com adaptação para diversos tamanhos de telas.
 - Conteúdo dos cases separado do código, em `src/data/cases.js`
 - Gráficos com destaque só no achado principal
 - Botões com área de toque de 44px e rótulos para leitores de tela
@@ -32,10 +32,9 @@ Cada case é contado como uma história: o problema, o que os dados mostraram, o
 ## Processo e decisões de design
 
 - **Conteúdo antes do código:** posicionamento, "Sobre mim" e roteiro de cada case foram definidos antes de qualquer tela.
-- **Paleta:** extensão da paleta do meu blog [log-narrado], com um ocre como única cor quente, reservado para o achado de cada gráfico.
+- **Paleta:** extensão da paleta do meu blog [log-narrado](https://lognarrado.vercel.app/), com um ocre como única cor quente, reservado para o achado de cada gráfico.
 - **Tipografia:** família IBM Plex (Serif nos títulos, Sans no texto, Mono no código).
-- **Layout:** [quantas] opções de home foram prototipadas; a escolhida é editorial, com foto no topo e cases em duas colunas.
-- [Outra decisão ou aprendizado que valha contar]
+- **Layout:** Escolhi seguir uma linha editorial, com foto no topo e cases em duas colunas.
 
 ## Estrutura
 
