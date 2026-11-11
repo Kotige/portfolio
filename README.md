@@ -58,9 +58,9 @@ Acrescente um objeto à lista em `src/data/cases.js`. A home e a página do case
 
 ## Próximos passos
 
-- [ ] Case de desempenho escolar
-- [ ] Case de vôlei
-- [ ] Case de jogos
+- [ ] **Prévia ao compartilhar cada case:** título, descrição e imagem Open Graph próprios por página, para que o link de um case no LinkedIn ou no WhatsApp mostre o case, e não a home genérica.
+- [ ] **Foto mais leve:** gerar versões em AVIF/WebP em alguns tamanhos e servir com `<picture>` e `srcset`, para que o celular baixe só o tamanho de que precisa.
+- [ ] **Transições suaves:** usar a View Transitions API na troca entre a home e as páginas de case e na troca de tema, respeitando `prefers-reduced-motion`.
 
 ## Contato
 
