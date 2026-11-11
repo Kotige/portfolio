@@ -9,7 +9,7 @@ export default function Home() {
 
       <section id="cases" className="mx-auto max-w-5xl scroll-mt-4 px-4 py-12 sm:px-6">
         <h2 className="text-[28px]/[1.25]">Cases</h2>
-        <div className="mt-4 grid gap-x-12 border-t border-border md:grid-cols-2 [&>*]:border-b [&>*]:border-border">
+        <div className="mt-4 grid gap-x-12 border-t border-border md:grid-cols-2 *:border-b *:border-border">
           {cases.map((caso) => (
             <CaseCard key={caso.slug} caso={caso} />
           ))}
