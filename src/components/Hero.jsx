@@ -31,13 +31,21 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex w-full justify-center md:flex-[2_1_0%]">
-        <img
-          src="/foto.jpg"
-          alt="Foto de Vítor Barra"
-          width="1063"
-          height="1417"
-          className="aspect-3/4 w-full max-w-sm rounded-2xl border border-border bg-surface object-cover"
-        />
+        <picture className="w-full max-w-sm">
+          <source
+            type="image/webp"
+            srcSet="/foto-400.webp 400w, /foto-800.webp 800w"
+            sizes="(min-width: 416px) 384px, calc(100vw - 32px)"
+          />
+          <img
+            src="/foto.jpg"
+            alt="Foto de Vítor Barra"
+            width="800"
+            height="1066"
+            fetchPriority="high"
+            className="aspect-3/4 w-full rounded-2xl border border-border bg-surface object-cover"
+          />
+        </picture>
       </div>
     </section>
   );
