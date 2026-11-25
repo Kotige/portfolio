@@ -37,7 +37,7 @@ export default function CasePage() {
       <header className="mt-6 max-w-3xl">
         <p className="font-mono text-sm text-ink-muted">{caso.tipo}</p>
         <h1 className="mt-3 text-[32px]/[1.15] sm:text-[40px]/[1.15]">{caso.manchete}</h1>
-        <p className="mt-5 inline-block rounded-lg bg-surface px-3 py-2 text-sm/[1.5] text-ink-muted">
+        <p className="mt-5 inline-block rounded-lg bg-surface px-3 py-2 text-sm/normal text-ink-muted">
           {caso.selo}
         </p>
       </header>
@@ -81,7 +81,7 @@ export default function CasePage() {
           })}
         </div>
 
-        <aside className="h-fit space-y-6 rounded-xl border border-border bg-card p-5 text-sm/[1.5] lg:sticky lg:top-6">
+        <aside className="h-fit space-y-6 rounded-xl border border-border bg-card p-5 text-sm/normal lg:sticky lg:top-6">
           <Item rotulo="Meu papel">{caso.lateral.papel}</Item>
           <Item rotulo="Dados">{caso.lateral.dados}</Item>
           <Item rotulo="Stack">{caso.lateral.stack}</Item>
