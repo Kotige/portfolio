@@ -6,7 +6,8 @@ import NotFound from './NotFound.jsx'
 import { cases, graficos } from '../data/cases.js'
 
 const formatos = {
-  porcentagem: (v) => `${v.toLocaleString('pt-BR')}%`,}
+  porcentagem: (v) => `${v.toLocaleString('pt-BR')}%`,
+}
 
 export default function CasePage() {
   const { slug } = useParams()
