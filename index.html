@@ -9,10 +9,51 @@
         document.documentElement.classList.toggle("dark", escuro);
       } catch (e) {}
     </script>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Vítor Barra — analista de dados com formação em Física. Cases de análise de dados com Python, SQL e estatística." />
-    <title>Vítor Barra — Análise de dados</title>
+    <title>Vítor Barra — Análise e Ciência de Dados</title>
+    <meta name="description" content="Vítor Barra, analista de dados com formação em Física. Cases de análise e ciência de dados com Python, SQL e estatística." />
+    <meta name="author" content="Vítor Barra" />
+    <link rel="canonical" href="https://vitorbarra.vercel.app/" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#f8f7fa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a1920" media="(prefers-color-scheme: dark)" />
+
+    <!-- Prévia ao compartilhar (LinkedIn, WhatsApp, X...). Esses robôs não rodam JavaScript,
+         então a prévia é a mesma para todas as páginas. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Vítor Barra" />
+    <meta property="og:title" content="Vítor Barra — Análise e Ciência de Dados" />
+    <meta property="og:description" content="Analista de dados com formação em Física. Cases com Python, SQL e estatística, contados como histórias: o problema, o que os dados mostraram e as limitações." />
+    <meta property="og:url" content="https://vitorbarra.vercel.app/" />
+    <meta property="og:image" content="https://vitorbarra.vercel.app/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Vítor Barra, analista de dados com formação em Física, ao lado do texto Análise e Ciência de Dados." />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vítor Barra",
+        "alternateName": "Vítor Fernandes Barra",
+        "jobTitle": "Analista de dados",
+        "description": "Analista de dados com formação em Física (mestre pela UFJF).",
+        "url": "https://vitorbarra.vercel.app/",
+        "image": "https://vitorbarra.vercel.app/foto-800.webp",
+        "address": { "@type": "PostalAddress", "addressLocality": "Juiz de Fora", "addressRegion": "MG", "addressCountry": "BR" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Universidade Federal de Juiz de Fora" },
+          { "@type": "CollegeOrUniversity", "name": "Universidade Federal de São João del-Rei" }
+        ],
+        "knowsAbout": ["Análise de dados", "Ciência de dados", "Python", "SQL", "Estatística"],
+        "sameAs": ["https://linkedin.com/in/vitorbarra", "https://github.com/Kotige"]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
