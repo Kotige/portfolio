@@ -25,3 +25,5 @@ dist-ssr
 
 # Documentos de planejamento (conteúdo e instruções) — ficam só no computador
 notas/
+.vercel
+.env*
