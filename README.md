@@ -1,8 +1,8 @@
 # Portfólio — Vítor Barra
 
-Meu portifólio de Ciência de Dados com cases reais, construído utilizando meus conhecimentos prévios de React, Tailwind e Claude Code.
+Meu portfólio de Ciência de Dados com cases reais, construído utilizando meus conhecimentos prévios de React, Tailwind e Claude Code.
 
-**Acesse:** [link do site na Vercel]
+**Acesse:** [vitorbarra.vercel.app](https://vitorbarra.vercel.app)
 
 | Modo claro                                     | Modo escuro                                      |
 | ---------------------------------------------- | ------------------------------------------------ |
@@ -59,7 +59,7 @@ Acrescente um objeto à lista em `src/data/cases.js`. A home e a página do case
 ## Próximos passos
 
 - [ ] **Prévia ao compartilhar cada case:** título, descrição e imagem Open Graph próprios por página, para que o link de um case no LinkedIn ou no WhatsApp mostre o case, e não a home genérica.
-- [ ] **Foto mais leve:** gerar versões em AVIF/WebP em alguns tamanhos e servir com `<picture>` e `srcset`, para que o celular baixe só o tamanho de que precisa.
+- [ ] **Foto em AVIF:** a foto já é servida em WebP com `srcset` (29 a 82 KB); uma versão AVIF reduziria um pouco mais o peso.
 - [ ] **Transições suaves:** usar a View Transitions API na troca entre a home e as páginas de case e na troca de tema, respeitando `prefers-reduced-motion`.
 
 ## Contato
