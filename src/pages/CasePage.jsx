@@ -4,6 +4,7 @@ import MetricCard from '../components/MetricCard.jsx'
 import BarChart from '../components/BarChart.jsx'
 import NotFound from './NotFound.jsx'
 import { cases, graficos } from '../data/cases.js'
+import useSeo from '../useSeo.js'
 
 const formatos = {
   porcentagem: (v) => `${v.toLocaleString('pt-BR')}%`,
@@ -12,8 +13,16 @@ const formatos = {
 export default function CasePage() {
   const { slug } = useParams()
   const caso = cases.find((c) => c.slug === slug)
+  const publicado = caso && caso.status !== 'em-breve'
 
-  if (!caso || caso.status === 'em-breve') return <NotFound />
+  // O efeito do pai roda depois do NotFound, então ele também precisa tratar o caso inexistente
+  useSeo(
+    publicado
+      ? { titulo: caso.titulo, descricao: caso.resumo, caminho: `/cases/${slug}` }
+      : { titulo: 'Página não encontrada', indexar: false },
+  )
+
+  if (!publicado) return <NotFound />
 
   return (
     <article className="mx-auto max-w-5xl px-4 pt-8 sm:px-6">

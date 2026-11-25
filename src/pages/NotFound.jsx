@@ -1,6 +1,9 @@
 import { Link } from 'react-router'
+import useSeo from '../useSeo.js'
 
 export default function NotFound() {
+  useSeo({ titulo: 'Página não encontrada', indexar: false })
+
   return (
     <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
       <p className="font-mono text-sm text-ink-muted">Erro 404</p>

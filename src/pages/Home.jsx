@@ -1,8 +1,11 @@
 import Hero from "../components/Hero.jsx";
 import CaseCard from "../components/CaseCard.jsx";
 import { cases } from "../data/cases.js";
+import useSeo from "../useSeo.js";
 
 export default function Home() {
+  useSeo();
+
   return (
     <>
       <Hero />
