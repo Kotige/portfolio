@@ -6,8 +6,7 @@ import NotFound from './NotFound.jsx'
 import { cases, graficos } from '../data/cases.js'
 
 const formatos = {
-  porcentagem: (v) => `${v.toLocaleString('pt-BR')}%`,
-}
+  porcentagem: (v) => `${v.toLocaleString('pt-BR')}%`,}
 
 export default function CasePage() {
   const { slug } = useParams()
@@ -55,6 +54,16 @@ export default function CasePage() {
                     dados={g.dados}
                     media={g.media}
                     formatar={formatos[g.formato]}
+                  />
+                )}
+                {secao.imagem && (
+                  <img
+                    src={secao.imagem.src}
+                    alt={secao.imagem.alt}
+                    width={secao.imagem.largura}
+                    height={secao.imagem.altura}
+                    loading="lazy"
+                    className="my-6 h-auto w-full rounded-xl border border-border"
                   />
                 )}
               </section>
