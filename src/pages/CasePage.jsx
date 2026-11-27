@@ -8,6 +8,7 @@ import useSeo from '../useSeo.js'
 
 const formatos = {
   porcentagem: (v) => `${v.toLocaleString('pt-BR')}%`,
+  decimal: (v) => v.toLocaleString('pt-BR', { minimumFractionDigits: 2 }),
 }
 
 export default function CasePage() {
