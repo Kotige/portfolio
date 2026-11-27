@@ -12,7 +12,7 @@ export const cases = [
       'Seis edições do ENEM em Minas Gerais, um pipeline em SQL com testes e a primeira pergunta respondida: o tamanho da diferença por rede de ensino, renda e escolaridade dos pais.',
     tags: ['Python', 'SQL', 'DuckDB'],
     manchete:
-      'Em Minas, renda, rede de ensino e escolaridade dos pais separam as notas de Ciências da Natureza em cerca de um desvio-padrão, sempre nessa ordem.',
+      'Em Minas, renda, rede de ensino e escolaridade dos pais separam as notas de Ciências da Natureza no Enem',
     selo: 'Projeto individual · em andamento · Claude Code como assistente de engenharia; perguntas, decisões e interpretação são minhas.',
     metricas: [
       { valor: '~30', legenda: 'pontos a mais na média a cada faixa de renda per capita (2020–2023)' },
